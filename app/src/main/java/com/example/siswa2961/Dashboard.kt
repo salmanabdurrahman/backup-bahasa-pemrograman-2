@@ -3,12 +3,16 @@ package com.example.siswa2961
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.cardview.widget.CardView
 
 class Dashboard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dashboard)
+
+        val tv_nama_siswa: TextView = findViewById(R.id.tv_nama_siswa)
+        tv_nama_siswa.text = getSharedPreferences("siswa", MODE_PRIVATE).getString("nama_siswa", "Siswa")
 
         val cv_akun:CardView = findViewById(R.id.cv_akun)
         val cv_pengumuman:CardView = findViewById(R.id.cv_pengumuman)

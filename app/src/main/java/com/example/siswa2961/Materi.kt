@@ -24,7 +24,7 @@ class Materi : AppCompatActivity() {
         val minta = Volley.newRequestQueue(this)
         val mintadata = object : StringRequest(
             Request.Method.POST,
-            "http://192.168.0.101/android_amikom_2961/materi_tampil.php",
+            "http://172.27.203.171/android_amikom_2961/materi_tampil.php",
             Response.Listener {response ->
                 val dataarray = JSONObject(response).getJSONArray("data")
 

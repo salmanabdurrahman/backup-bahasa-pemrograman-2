@@ -13,12 +13,14 @@
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/saya"
+            android:src="@drawable/profile"
+            android:id="@+id/iv_foto_siswa"
             android:layout_marginBottom="10dp"></ImageView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Arif Nur Rohman"
+            android:text="Nama Siswa"
+            android:id="@+id/tv_nama_siswa"
             android:textSize="16dp"
             android:textStyle="bold"></TextView>
     </LinearLayout>
