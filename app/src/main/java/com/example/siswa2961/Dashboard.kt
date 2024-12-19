@@ -3,6 +3,7 @@ package com.example.siswa2961
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 
@@ -12,6 +13,8 @@ class Dashboard : AppCompatActivity() {
         setContentView(R.layout.dashboard)
 
         val tv_nama_siswa: TextView = findViewById(R.id.tv_nama_siswa)
+        val iv_foto_siswa: ImageView = findViewById(R.id.iv_foto_siswa)
+
         tv_nama_siswa.text = getSharedPreferences("siswa", MODE_PRIVATE).getString("nama_siswa", "Siswa")
 
         val cv_akun:CardView = findViewById(R.id.cv_akun)
