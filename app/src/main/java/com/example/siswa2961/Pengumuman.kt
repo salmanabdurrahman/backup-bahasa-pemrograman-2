@@ -23,7 +23,7 @@ class Pengumuman : AppCompatActivity() {
         val minta = Volley.newRequestQueue(this)
         val mintadata: StringRequest = object : StringRequest(
             Request.Method.POST,
-            "http://192.168.0.101/android_amikom_2961/pengumuman_tampil.php",
+            Backend().url_pengumuman,
             Response.Listener<String> { response ->
                 val dataarray = JSONObject(response).getJSONArray("data")
 

@@ -30,7 +30,7 @@ class Login : AppCompatActivity() {
             val mintaData = Volley.newRequestQueue(this)
             val mintadata = object : StringRequest(
                 Request.Method.POST,
-                "http://192.168.0.101/android_amikom_2961/siswa_login.php",
+                Backend().url_login,
                 Response.Listener { response ->
                     val respon = JSONObject(response)
                     if (respon.getString("hasil") == "sukses") {
